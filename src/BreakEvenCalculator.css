@@ -1,187 +1,212 @@
-.page {
-    min-height:100vh;
-    background:#202124;
-    padding:40px;
-    color:white;
+/* ================================
+   ENTERPRISE UI - NAIRA VERSION
+================================ */
+* {
+    box-sizing: border-box;
 }
 
+body, html, .page {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: #20211F;
+    color: #F5F5F5;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
 
 .break-even-container {
-
-    max-width:1100px;
-    margin:auto;
-
-    background:#2a2a2a;
-
-    padding:35px;
-
-    border-radius:25px;
-
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 40px 24px;
 }
 
-
-
+/* Typography */
 .intro h1 {
-
-    font-size:40px;
-
+    font-size: clamp(32px, 3.8vw, 48px);
+    color: #F5F5F5;
+    margin-bottom: 16px;
 }
 
-
-
-.intro p,
-.info-card p {
-
-    color:#ccc;
-    line-height:1.7;
-
+.intro p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #B8B8B8;
+    max-width: 720px;
+    line-height: 1.75;
+    margin: 0 auto 16px;
+}
+/* Cards */
+.info-card,
+.card,
+.interpretation,
+.formula,
+.slider-box {
+    background: #292B2A;
+    border: 1px solid #303234;
+    border-radius: 12px;
 }
 
-
-
-
-.info-card {
-
-    background:#1f1f1f;
-
-    padding:25px;
-
-    border-radius:20px;
-
-    margin:30px 0;
-
+.info-card:hover,
+.card:hover,
+.interpretation:hover,
+.slider-box:hover {
+    border-color: #60CDFF;
+    box-shadow: 0 10px 20px -5px rgba(96, 205, 255, 0.12);
 }
 
-
-
-
-
+/* Summary Grid */
 .summary-grid {
-
-    display:grid;
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(200px,1fr));
-
-    gap:20px;
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
 }
-
-
 
 .card {
-
-    background:#111827;
-
-    padding:20px;
-
-    border-radius:15px;
-
+    padding: 28px 24px;
 }
 
+.card h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #B8B8B8;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
 
 .card strong {
-
-    font-size:30px;
-
-    color:#60a5fa;
-
+    font-size: 34px;
+    font-weight: 700;
+    color: #60CDFF;
+    display: block;
 }
 
+.card small {
+    color: #B8B8B8;
+    font-size: 14px;
+}
 
-
-
-
+/* Chart */
 .chart-container {
-
-    height:420px;
-
-    margin-top:40px;
-
+    width: 100%;
+    height: 460px;
+    background: #292B2A;
+    border: 1px solid #303234;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 48px 0;
 }
 
-
-
-
-
+/* Formula */
 .formula {
-
-    text-align:center;
-
-    margin:40px 0;
-
+    text-align: center;
+    padding: 48px 32px;
+    margin: 48px 0;
 }
 
+.formula h2 {
+    font-size: 22px;
+    color: #B8B8B8;
+    margin-bottom: 16px;
+}
+
+.formula p {
+    font-size: 18px;
+    color: #F5F5F5;
+    margin-bottom: 24px;
+}
 
 .formula h1 {
-
-    color:#60a5fa;
-
+    font-size: clamp(44px, 6vw, 62px);
+    color: #60CDFF;
+    font-weight: 700;
 }
 
-
-
-
-
+/* Sliders */
 .controls {
-
-    margin-top:40px;
-
+    margin-top: 12px;
 }
-
-
 
 .slider-box {
-
-    display:grid;
-
-    grid-template-columns:
-    250px 100px 1fr;
-
-    align-items:center;
-
-    gap:20px;
-
-    margin:30px 0;
-
+    display: grid;
+    grid-template-columns: 280px 130px 1fr;
+    align-items: center;
+    gap: 24px;
+    padding: 22px 28px;
+    margin-bottom: 16px;
 }
 
-
+.slider-box h3 {
+    margin: 0;
+    font-size: 17.5px;
+    color: #F5F5F5;
+}
 
 .slider-box p {
-
-    color:#aaa;
-
+    margin: 4px 0 0;
+    color: #B8B8B8;
+    font-size: 14.5px;
 }
 
-
-
+.slider-box strong {
+    font-size: 26px;
+    color: #60CDFF;
+    font-weight: 600;
+    text-align: right;
+}
 
 input[type="range"] {
-
-    width:100%;
-
+    width: 100%;
+    height: 7px;
+    accent-color: #60CDFF;
+    background: #303234;
+    border-radius: 9999px;
+    cursor: pointer;
 }
 
-
-
-
+/* Interpretation */
 .interpretation {
-
-    margin-top:40px;
-
-    background:#111827;
-
-    padding:25px;
-
-    border-radius:20px;
-
+    padding: 32px;
+    margin-top: 60px;
 }
 
+.interpretation h2 {
+    font-size: 24px;
+    color: #F5F5F5;
+    margin-bottom: 20px;
+}
 
+.interpretation p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #F5F5F5;
+}
 
-b {
+.interpretation b {
+    color: #60CDFF;
+}
 
-    color:#60a5fa;
+/* Responsive */
+@media (max-width: 1024px) {
+    .break-even-container { padding: 32px 20px; }
+    .chart-container { height: 420px; }
+}
 
+@media (max-width: 768px) {
+    .break-even-container { padding: 24px 16px; }
+    .slider-box {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        padding: 20px;
+    }
+    .slider-box strong { text-align: left; }
+    .chart-container { height: 360px; }
+}
+
+@media (max-width: 480px) {
+    .break-even-container { padding: 20px 12px; }
+    .chart-container { height: 320px; }
 }
