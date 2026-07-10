@@ -22,11 +22,25 @@ body, html, .page {
     padding: 40px 24px;
 }
 
-/* Typography */
+/* Intro Section - Strong Center */
+.intro {
+    text-align: center;
+    margin-bottom: 48px;
+    max-width: 100%;
+}
+
+.intro-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
 .intro h1 {
     font-size: clamp(32px, 3.8vw, 48px);
     color: #F5F5F5;
-    margin-bottom: 16px;
+    margin: 0;
 }
 
 .intro p {
@@ -35,9 +49,11 @@ body, html, .page {
     color: #B8B8B8;
     max-width: 720px;
     line-height: 1.75;
-    margin: 0 auto 16px;
+    margin: 0 auto;
+    padding: 0 10px;
 }
-/* Cards */
+
+/* Rest of your styles (unchanged) */
 .info-card,
 .card,
 .interpretation,
@@ -56,7 +72,6 @@ body, html, .page {
     box-shadow: 0 10px 20px -5px rgba(96, 205, 255, 0.12);
 }
 
-/* Summary Grid */
 .summary-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -89,7 +104,6 @@ body, html, .page {
     font-size: 14px;
 }
 
-/* Chart */
 .chart-container {
     width: 100%;
     height: 460px;
@@ -100,7 +114,6 @@ body, html, .page {
     margin: 48px 0;
 }
 
-/* Formula */
 .formula {
     text-align: center;
     padding: 48px 32px;
@@ -125,7 +138,6 @@ body, html, .page {
     font-weight: 700;
 }
 
-/* Sliders */
 .controls {
     margin-top: 12px;
 }
@@ -167,7 +179,6 @@ input[type="range"] {
     cursor: pointer;
 }
 
-/* Interpretation */
 .interpretation {
     padding: 32px;
     margin-top: 60px;
